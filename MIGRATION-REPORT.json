@@ -1,0 +1,64 @@
+{
+  "archived_legacy_commands": 164,
+  "archived_legacy_events": 7,
+  "rebranded_files": 9,
+  "visible_name_replacements": 19,
+  "author_metadata_entries_preserved": 71,
+  "legacy_maintainer_urls_sanitized": 14,
+  "legacy_files_with_credential_placeholders": [
+    "scripts/cmds/amarbondhu.js",
+    "scripts/cmds/fbcover.js",
+    "scripts/cmds/imgbb.js",
+    "scripts/events/welcome.js"
+  ],
+  "migration": "Archived scripts not loaded at runtime: Messenger FCA APIs and external dependencies require manual per-command porting.",
+  "changed_files": [
+    {
+      "file": "cmds/fakechat.js",
+      "replacements": 5
+    },
+    {
+      "file": "cmds/fakechat2.js",
+      "replacements": 5
+    },
+    {
+      "file": "cmds/fbcover.js",
+      "replacements": 2
+    },
+    {
+      "file": "cmds/ffinfo.js",
+      "replacements": 1
+    },
+    {
+      "file": "cmds/help.js",
+      "replacements": 1
+    },
+    {
+      "file": "cmds/owner.js",
+      "replacements": 2
+    },
+    {
+      "file": "cmds/setting.js",
+      "replacements": 1
+    },
+    {
+      "file": "cmds/wanted.js",
+      "replacements": 1
+    },
+    {
+      "file": "events/welcome.js",
+      "replacements": 1
+    }
+  ],
+  "additional_legacy_credential_scrubs": [
+    "cmds/rbg.js",
+    "cmds/weather.js",
+    "cmds/needgf.js"
+  ],
+  "active_whatsapp_commands": 21,
+  "active_whatsapp_events": 1,
+  "test_status": "Offline 6 tests passed; WhatsApp live link not tested",
+  "current_runtime": "whatsapp-web.js QR via Chromium (not Baileys)",
+  "current_active_command_count": 21,
+  "qr_edition_note": "Original Messenger scripts archived; WhatsApp-native commands mapped via web-adapter.js"
+}

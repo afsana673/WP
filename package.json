@@ -1,0 +1,19 @@
+{
+  "name": "hr-habib-whatsapp-bot",
+  "version": "2.0.0",
+  "description": "HR HABIB WhatsApp Web QR bot for Render with preserved legacy commands",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test test/*.test.js",
+    "check": "node --check index.js && node --check lib/client.js && node --check lib/web-adapter.js && node --check lib/engine.js && node --check lib/store.js && node --check events/group-members.js && node -e \"require('./lib/engine').loadCommands(); console.log('Active commands OK')\"",
+    "build": "npm run check && npm test"
+  },
+  "engines": { "node": ">=22.0.0 <23.0.0" },
+  "dependencies": {
+    "whatsapp-web.js": "1.34.7",
+    "qrcode": "1.5.4"
+  },
+  "license": "MIT"
+}

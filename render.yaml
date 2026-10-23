@@ -1,0 +1,21 @@
+# Create a NEW Render Web Service using Docker; existing Node services do not
+# automatically switch runtime when this file is committed.
+services:
+  - type: web
+    name: hr-habib-whatsapp-qr
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: QR_PASSWORD
+        sync: false
+      - key: PREFIX
+        value: '!'
+      - key: DATA_DIR
+        value: /app/data
+    disk:
+      name: hr-habib-session
+      mountPath: /app/data
+      sizeGB: 1
